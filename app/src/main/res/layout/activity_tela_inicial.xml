@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#202020"
+    tools:context=".TelaInicial">
+
+    <TextView
+        android:id="@+id/nomeapp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#83C246"
+        android:backgroundTint="#8CC44A"
+        android:text="MEU REMÉDIO"
+        android:textAlignment="center"
+        android:textColor="#121212"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textoinicial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FORMA DE CONSUMO DO MEDICAMENTO"
+        android:textAlignment="center"
+        android:textColor="#F4EEEE"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="175dp" />
+
+    <Button
+        android:id="@+id/buttoncomprimido"
+        android:layout_width="271dp"
+        android:layout_height="56dp"
+        android:text="COMPRIMIDO"
+        app:icon="@drawable/comprimido"
+        app:iconTint="#F3F4F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="281dp" />
+
+    <Button
+        android:id="@+id/buttongotas"
+        android:layout_width="271dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="28dp"
+        android:text="GOTAS"
+        app:icon="@drawable/gota"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttoncomprimido" />
+
+    <Button
+        android:id="@+id/buttoninalacao"
+        android:layout_width="272dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="28dp"
+        android:text="INALAÇÃO"
+        app:icon="@drawable/inalador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttongotas" />
+
+    <Button
+        android:id="@+id/buttoninjecao"
+        android:layout_width="274dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="28dp"
+        android:text="INJEÇÃO"
+        app:icon="@drawable/injecao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttoninalacao" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
