@@ -27,26 +27,29 @@
         android:id="@+id/textoinicial"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
         android:text="FORMA DE CONSUMO DO MEDICAMENTO"
         android:textAlignment="center"
         android:textColor="#F4EEEE"
         android:textSize="20sp"
-        android:textStyle="italic"
+        android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="175dp" />
+        app:layout_constraintTop_toTopOf="@+id/nomeapp" />
 
     <Button
         android:id="@+id/buttoncomprimido"
         android:layout_width="271dp"
-        android:layout_height="56dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="304dp"
         android:text="COMPRIMIDO"
         app:icon="@drawable/comprimido"
         app:iconTint="#F3F4F3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="281dp" />
+        app:layout_constraintTop_toTopOf="@+id/nomeapp" />
 
     <Button
         android:id="@+id/buttongotas"
@@ -62,7 +65,7 @@
 
     <Button
         android:id="@+id/buttoninalacao"
-        android:layout_width="272dp"
+        android:layout_width="271dp"
         android:layout_height="52dp"
         android:layout_marginTop="28dp"
         android:text="INALAÇÃO"
@@ -74,8 +77,8 @@
 
     <Button
         android:id="@+id/buttoninjecao"
-        android:layout_width="274dp"
-        android:layout_height="54dp"
+        android:layout_width="271dp"
+        android:layout_height="52dp"
         android:layout_marginTop="28dp"
         android:text="INJEÇÃO"
         app:icon="@drawable/injecao"

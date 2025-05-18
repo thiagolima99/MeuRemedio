@@ -12,9 +12,12 @@
         android:id="@+id/imageView2"
         android:layout_width="126dp"
         android:layout_height="129dp"
+        android:layout_marginTop="92dp"
         android:src="@drawable/remedio2"
-        tools:layout_editor_absoluteX="150dp"
-        tools:layout_editor_absoluteY="82dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cabecalho" />
 
     <TextView
         android:id="@+id/cabecalho"
@@ -40,45 +43,50 @@
         android:id="@+id/titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="260dp"
         android:text="GERENCIADOR DE REMÉDIOS"
         android:textColor="#AEEF6C"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="237dp" />
+        app:layout_constraintTop_toTopOf="@+id/cabecalho" />
 
     <TextView
         android:id="@+id/nomemedicamento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="364dp"
         android:text="NOME DO MEDICAMENTO:"
         android:textColor="#AEEF6C"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="344dp" />
+        app:layout_constraintTop_toTopOf="@+id/cabecalho" />
 
     <EditText
         android:id="@+id/camptexto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
         android:ems="10"
         android:inputType="text"
         android:textColor="#AFF16C"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nomemedicamento" />
+        app:layout_constraintTop_toBottomOf="@+id/nomemedicamento"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/buttonprox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="512dp"
         android:text="PRÓXIMO"
-        tools:layout_editor_absoluteX="150dp"
-        tools:layout_editor_absoluteY="489dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cabecalho" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
