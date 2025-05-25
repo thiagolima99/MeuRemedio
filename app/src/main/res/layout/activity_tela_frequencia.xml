@@ -27,7 +27,7 @@
         android:id="@+id/texto2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="156dp"
+        android:layout_marginTop="180dp"
         android:text="FREQUÊNCIA QUE VOCÊ TOMA O REMÉDIO"
         android:textColor="#E8E1E1"
         android:textSize="20sp"
@@ -44,44 +44,9 @@
         android:text="TODOS OS DIAS"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/nomeapp2"
-        app:layout_constraintVertical_bias="0.346" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="235dp"
-        android:layout_height="48dp"
-        android:text="DIAS ALTERNADOS"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/nomeapp2"
-        app:layout_constraintVertical_bias="0.429" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="235dp"
-        android:layout_height="52dp"
-        android:text="SOMENTE QUANDO NECESSÁRIO"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/nomeapp2"
-        app:layout_constraintVertical_bias="0.516" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="235dp"
-        android:layout_height="48dp"
-        android:text="DIAS ESPECÍFICOS"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/nomeapp2"
-        app:layout_constraintVertical_bias="0.601" />
+        app:layout_constraintVertical_bias="0.398" />
 
     <Button
         android:id="@+id/button5"
@@ -92,6 +57,40 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/nomeapp2"
-        app:layout_constraintVertical_bias="0.683" />
+        app:layout_constraintVertical_bias="0.734" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="235dp"
+        android:layout_height="48dp"
+        android:text="DIAS ESPECÍFICOS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nomeapp2"
+        app:layout_constraintVertical_bias="0.653" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="235dp"
+        android:layout_height="48dp"
+        android:text="DIAS ALTERNADOS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nomeapp2"
+        app:layout_constraintVertical_bias="0.48" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="235dp"
+        android:layout_height="52dp"
+        android:text="SOMENTE QUANDO NECESSÁRIO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nomeapp2"
+        app:layout_constraintVertical_bias="0.567" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
