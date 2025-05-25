@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#222222"
-    tools:context=".TelaFrequencia">
+    tools:context=".FrequenciaActivity">
+
 
     <TextView
         android:id="@+id/nomeapp2"

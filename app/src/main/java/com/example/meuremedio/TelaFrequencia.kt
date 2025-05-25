@@ -1,20 +1,29 @@
 package com.example.meuremedio
 
+import android.annotation.SuppressLint
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
-class TelaFrequencia : AppCompatActivity() {
+
+class FrequenciaActivity : AppCompatActivity() {
+
+    private lateinit var textViewNomeRecebido: TextView
+
+    @SuppressLint("MissingInflatedId", "SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_tela_frequencia)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+        setContentView(R.layout.activity_tela_frequencia) // Layout da FrequenciaActivity
+
+        textViewNomeRecebido = findViewById(R.id.textViewNomeMedicamentoRecebido)
+
+        val nomeMedicamento = intent.getStringExtra("NOME_MEDICAMENTO")
+
+        if (nomeMedicamento != null) {
+            textViewNomeRecebido.text = nomeMedicamento
+        } else {
+            textViewNomeRecebido.text = "Nome não informado"
         }
+
     }
 }
