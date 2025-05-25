@@ -16,13 +16,10 @@
             android:name=".TelaHora"
             android:exported="false" />
         <activity
-            android:name=".TelaFrequencia"
+            android:name=".FrequenciaActivity"
             android:exported="false" />
         <activity
             android:name=".TelaInicial"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity2"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
