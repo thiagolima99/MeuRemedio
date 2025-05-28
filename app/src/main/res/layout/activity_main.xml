@@ -8,22 +8,10 @@
     android:background="#202020"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="126dp"
-        android:layout_height="129dp"
-        android:layout_marginTop="92dp"
-        android:src="@drawable/remedio2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/cabecalho" />
-
     <TextView
         android:id="@+id/cabecalho"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:autoText="false"
         android:background="#E2D8D8"
         android:backgroundTint="#8BC34A"
         android:scrollbarDefaultDelayBeforeFade="400"
@@ -65,20 +53,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/cabecalho" />
 
-    <EditText
-        android:id="@+id/camptexto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:textColor="#AFF16C"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nomemedicamento"
-        app:layout_constraintVertical_bias="0.0" />
-
     <Button
         android:id="@+id/buttonprox"
         android:layout_width="wrap_content"
@@ -88,5 +62,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/cabecalho" />
+
+    <EditText
+        android:id="@+id/camptexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="11"
+        android:inputType="text"
+        android:hint="Dipirona"
+        android:minHeight="48dp"
+        android:textColor="#AFF16C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.562" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

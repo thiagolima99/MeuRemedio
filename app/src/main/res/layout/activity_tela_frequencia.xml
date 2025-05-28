@@ -2,17 +2,28 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#222222"
     tools:context=".FrequenciaActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="137dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="92dp"
+        android:src="@drawable/remedio2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/nomeapp2"
         android:layout_width="0dp"
         android:layout_height="50dp"
+        android:layout_marginTop="4dp"
         android:background="#83C246"
         android:backgroundTint="#83C246"
         android:text="MEU REMÉDIO"
@@ -21,77 +32,103 @@
         android:textSize="34sp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/texto2"
+        android:id="@+id/textViewFrequenciaTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="180dp"
-        android:text="FREQUÊNCIA QUE VOCÊ TOMA O REMÉDIO"
-        android:textColor="#E8E1E1"
-        android:textSize="20sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.482"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/nomeapp2" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="235dp"
-        android:layout_height="48dp"
-        android:text="TODOS OS DIAS"
+        android:text="Definir Frequência/Horário"
+        android:textColor="#E9E5E0"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/nomeapp2"
-        app:layout_constraintVertical_bias="0.398" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <!-- ADICIONADO: TextView para Nome do Medicamento -->
+    <TextView
+        android:id="@+id/textViewNomeMedicamentoInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Medicamento: N/A"
+        android:textColor="#EFE2E2"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFrequenciaTitulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- ADICIONADO: TextView para Tipo do Medicamento -->
+    <TextView
+        android:id="@+id/textViewTipoMedicamentoInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Tipo: N/A"
+        android:textColor="#EFE2E2"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNomeMedicamentoInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- ADICIONADO: TextView para Horário Selecionado -->
+    <TextView
+        android:id="@+id/textViewHorarioSelecionado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Horário: --:--"
+        android:textColor="#EFE2E2"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTipoMedicamentoInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/button5"
-        android:layout_width="235dp"
-        android:layout_height="48dp"
-        android:text="CICLO RECORRENTE"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/buttonDefinirHorario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#83C246"
+        android:text="Definir Horário"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHorarioSelecionado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextFrequencia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Frequência (ex: A cada 8 horas)"
+        android:inputType="text"
+        android:textColor="#EFE2E2"
+        android:textColorHint="#A0A0A0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/nomeapp2"
-        app:layout_constraintVertical_bias="0.734" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonDefinirHorario" />
+
 
     <Button
-        android:id="@+id/button4"
-        android:layout_width="235dp"
-        android:layout_height="48dp"
-        android:text="DIAS ESPECÍFICOS"
+        android:id="@+id/buttonSalvarRemedio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salvar Remédio"
+        android:backgroundTint="#83C246"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFrequencia"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/nomeapp2"
-        app:layout_constraintVertical_bias="0.653" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="235dp"
-        android:layout_height="48dp"
-        android:text="DIAS ALTERNADOS"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/nomeapp2"
-        app:layout_constraintVertical_bias="0.48" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="235dp"
-        android:layout_height="52dp"
-        android:text="SOMENTE QUANDO NECESSÁRIO"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/nomeapp2"
-        app:layout_constraintVertical_bias="0.567" />
-
+        android:layout_marginTop="24dp"
+        app:layout_constraintVertical_bias="0.2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

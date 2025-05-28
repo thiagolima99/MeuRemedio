@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="textViewNomeMedicamentoRecebido" type="id">textViewNomeMedicamentoRecebido</item>
+    <item name="textViewNomeMedicamentoInfo" type="id">textViewNomeMedicamentoInfo</item>
+    <item name="textViewTipoMedicamentoInfo" type="id">textViewNomeMedicamentoInfo</item>
 </resources>
