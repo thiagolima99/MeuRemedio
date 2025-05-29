@@ -33,9 +33,8 @@ class FrequenciaActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_tela_frequencia) // Verifique se o nome do layout está correto
+        setContentView(R.layout.activity_tela_frequencia)
 
-        // Inicializar DAO (se estiver usando Room)
         remedioDao = AppDatabase.getDatabase(applicationContext).remedioDao()
 
         textViewNomeMedicamentoInfo = findViewById(R.id.textViewNomeMedicamentoInfo)
@@ -75,13 +74,13 @@ class FrequenciaActivity : AppCompatActivity() {
             },
             horaAtual,
             minutoAtual,
-            true // true para formato 24 horas, false para AM/PM
+            true
         )
         timePickerDialog.show()
     }
 
     private fun atualizarTextViewHorario(hora: Int, minuto: Int) {
-        // Formata a hora e minuto para exibição (ex: 08:05)
+
         val horaFormatada = String.format(Locale.getDefault(), "%02d", hora)
         val minutoFormatado = String.format(Locale.getDefault(), "%02d", minuto)
         textViewHorarioSelecionado.text = "Horário: $horaFormatada:$minutoFormatado"

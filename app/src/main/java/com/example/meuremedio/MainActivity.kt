@@ -16,7 +16,6 @@ class MainActivity : AppCompatActivity() {
 
     private var tipoMedicamentoRecebido: String? = null
 
-    // Constantes para as chaves dos extras do Intent
     companion object {
         const val NOME_MEDICAMENTO = "NOME_MEDICAMENTO"
     }

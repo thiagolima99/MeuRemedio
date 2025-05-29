@@ -21,7 +21,7 @@ class TelaInicial : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_tela_inicial) // Defina o layout UMA VEZ
+        setContentView(R.layout.activity_tela_inicial)
 
         buttonComprimido = findViewById(R.id.buttoncomprimido)
         buttonGotas = findViewById(R.id.buttongotas)
@@ -55,6 +55,6 @@ class TelaInicial : AppCompatActivity() {
         val intent = Intent(this, FrequenciaActivity::class.java)
         intent.putExtra(TIPO_MEDICAMENTO, tipoMedicamento)
         startActivity(intent)
-        // finish() // Opcional
+
     }
 }

@@ -1,6 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item name="textViewNomeMedicamentoRecebido" type="id">textViewNomeMedicamentoRecebido</item>
-    <item name="textViewNomeMedicamentoInfo" type="id">textViewNomeMedicamentoInfo</item>
-    <item name="textViewTipoMedicamentoInfo" type="id">textViewNomeMedicamentoInfo</item>
+    <item type="id" name="textViewNomeMedicamentoInfo" />
+    <item type="id" name="textViewTipoMedicamentoInfo" />
+    <item type="id" name="buttonDefinirHorario" />
+    <item type="id" name="textViewHorarioSelecionado" />
+    <item type="id" name="editTextFrequencia" />
+    <item type="id" name="buttonSalvarRemedio" />
 </resources>
