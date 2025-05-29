@@ -25,9 +25,9 @@ class MainActivity : AppCompatActivity() {
 
         editTextNomeMedicamento = findViewById(R.id.camptexto)
         buttonProximo = findViewById(R.id.buttonprox)
+        // ADICIONE ESTA LINHA:
+        textViewTipoSelecionado = findViewById(R.id.camptexto)
 
-
-        // Receber o tipo de medicamento da TelaInicial
         tipoMedicamentoRecebido = intent.getStringExtra(TelaInicial.TIPO_MEDICAMENTO)
 
         if (tipoMedicamentoRecebido != null) {

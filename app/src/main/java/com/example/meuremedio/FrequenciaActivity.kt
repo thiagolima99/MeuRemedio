@@ -66,7 +66,6 @@ class FrequenciaActivity : AppCompatActivity() {
 
         val timePickerDialog = TimePickerDialog(
             this,
-            // Listener que é chamado quando o usuário define um horário
             TimePickerDialog.OnTimeSetListener { _, hourOfDay, minute ->
                 horaSelecionada = hourOfDay
                 minutoSelecionado = minute
